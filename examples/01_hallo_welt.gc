@@ -1,0 +1,17 @@
+/*
+ * 01_hallo_welt.gc
+ * Das ist ein einfaches "Hallo Welt" Programm.
+ * Es zeigt Kommentare, Variablen und die DRUCKE-Funktion.
+ */
+
+GANZ haupt() {
+
+    // Einzeiliger Kommentar!
+    WORT gruss = "Hallo";
+    WORT name = "Welt";
+
+    // Wir können Strings mit '+' verbinden
+    DRUCKE(gruss + ", " + name + "!"); // Ausgabe: Hallo, Welt!
+
+    ZURUECK 0;
+}

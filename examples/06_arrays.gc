@@ -1,0 +1,24 @@
+/*
+ * 06_arrays.gc
+ * Zeigt die Verwendung von Arrays (Listen).
+ */
+
+GANZ haupt() {
+
+    // Array deklarieren (KISTE ist ein Alias für GANZ[])
+    KISTE zahlen = [10, 20, 30];
+
+    // Elemente lesen (Index startet bei 0)
+    DRUCKE(zahlen[0]); // 10
+    DRUCKE(zahlen[2]); // 30
+
+    // Elemente schreiben (Array-Zuweisung)
+    zahlen[1] = 99;
+    DRUCKE(zahlen[1]); // 99
+
+    // Man kann auch andere Array-Typen deklarieren
+    WORT[] worte = ["Das", "ist", "cool"];
+    DRUCKE(worte[0] + " " + worte[2]); // Das cool
+
+    ZURUECK 0;
+}

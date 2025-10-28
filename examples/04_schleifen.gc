@@ -1,0 +1,23 @@
+/*
+ * 04_schleifen.gc
+ * Zeigt die beiden Schleifen-Typen: SOLANGE und FUER.
+ */
+
+GANZ haupt() {
+
+    DRUCKE("--- SOLANGE-Schleife ---");
+    GANZ i = 0;
+    SOLANGE (i < 3) {
+        DRUCKE("SOLANGE zählt: " + ZU_WORT(i));
+        i = i + 1; // Wichtig: Inkrementieren!
+    }
+
+
+    DRUCKE("--- FUER-Schleife ---");
+    // FUER (Initialisierung; Bedingung; Inkrement)
+    FUER (GANZ j = 10; j <= 12; j = j + 1) {
+        DRUCKE("FUER zählt: " + ZU_WORT(j));
+    }
+
+    ZURUECK 0;
+}

@@ -1,0 +1,26 @@
+/*
+ * 05_funktionen.gc
+ * Zeigt, wie man eigene Funktionen mit Parametern und Rückgabewerten erstellt.
+ */
+
+// Eine Funktion, die zwei Zahlen addiert
+GANZ addiere(GANZ a, GANZ b) {
+    ZURUECK a + b;
+}
+
+// Eine Funktion, die einen Text zurückgibt
+WORT erstelleGruss(WORT name) {
+    ZURUECK "Hallo, " + name + "!";
+}
+
+// Das Hauptprogramm
+GANZ haupt() {
+
+    GANZ summe = addiere(50, 25);
+    DRUCKE(summe); // 75
+
+    WORT gruss = erstelleGruss("GerLang");
+    DRUCKE(gruss); // Hallo, GerLang!
+
+    ZURUECK 0;
+}

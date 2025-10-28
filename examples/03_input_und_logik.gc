@@ -1,0 +1,35 @@
+/*
+ * 03_input_und_logik.gc
+ * Ein interaktives Programm, das Entscheidungen trifft.
+ */
+
+GANZ haupt() {
+
+    DRUCKE("Wie alt bist du?");
+    WORT alter_text = LESE();
+    GANZ alter = ZU_GANZ(alter_text);
+
+    // WENN / SONST WENN / SONST
+    WENN (alter < 18) {
+        DRUCKE("Du bist noch nicht volljährig.");
+    } SONST WENN (alter == 18) {
+        DRUCKE("Glückwunsch zur Volljährigkeit!");
+    } SONST {
+        DRUCKE("Du bist volljährig.");
+    }
+
+    // Logische Operatoren (UND / ODER / NICHT)
+    WENN (alter > 12 UND alter < 20) {
+        DRUCKE("Du bist ein Teenager.");
+    }
+
+    WENN (alter < 10 ODER alter > 65) {
+        DRUCKE("Du bist entweder ein Kind oder im Rentenalter.");
+    }
+
+    WENN (NICHT (alter == 42)) {
+        DRUCKE("Du bist nicht 42.");
+    }
+
+    ZURUECK 0;
+}
