@@ -1,41 +1,18 @@
-# Prerequisites
-*.d
+# Files specific to the German C (gppc) project
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Compiled compiler executable
+gppc
 
-# Precompiled Headers
-*.gch
-*.pch
+# Directory for compiled object files
+obj/
 
-# Linker files
-*.ilk
+# Temporary C++ file generated during compilation
+_temp.cpp
 
-# Debugger Files
-*.pdb
+# Ignore compiled examples in the examples folder, but keep the .gc source files
+examples/*
+!examples/*.gc
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+# Ignore executables created without an extension (common on Linux/Mac)
+examples/*.*
+!examples/*.gc
