@@ -41,7 +41,7 @@ German-C currently supports a solid set of features:
 ### Cloning the Repository
 
 ```bash
-git clone [https://github.com/XdEnder/German-C.git](https://github.com/XdEnder/German-C.git)
+git clone <repository-url>
 cd German-C
 ```
 
