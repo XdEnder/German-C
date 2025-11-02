@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Language: C++](https://img.shields.io/badge/Language-C++-00599C.svg)](https://isocpp.org/)
 
-**German C (gppc): A fun experimental project creating a C++ transpiler. Write code using German keywords (`GANZ`, `WENN`, `SOLANGE`) in `.gc` files and compile them into executable C++ programs. Inspired by [KibaOfficial/gerlang](https://github.com/KibaOfficial/gerlang).**
+**German C (gppc): A fun experimental project creating a C++ transpiler. Write code using German keywords (`GANZ`, `WENN`, `SOLANGE`) in `.gc` files and compile them into executable C++ programs.**
 
 ---
 
@@ -116,10 +116,6 @@ make          # If you haven't compiled gppc yet
 ./gppc examples/01_hallo_welt.gc
 ./examples/01_hallo_welt
 ```
-
-## 🙏 Acknowledgements
-
-* This project was heavily inspired by the GerLang project by KibaOfficial. Check out his Python implementation: [KibaOfficial/gerlang](https://github.com/KibaOfficial/gerlang)
 
 ## 📄 License
 
